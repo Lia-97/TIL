@@ -49,6 +49,16 @@ $ git remote add origin [github 원격 저장소 주소]
 - 최종적으로 Github 원격 저장소에 push한다.
 
 ```shell
+$ git push origin master
+```
+
+
+
+### (6) 그 외 명령어
+
+- 현재 `git`의 상태를 조회 `git status`
+
+```shell
 $ git status
 ```
 
