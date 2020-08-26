@@ -1,4 +1,8 @@
+## Cafe Olleh Study (08.26)
 
+#### pwreset에 대해 주석을 달며 복습.
+
+- pwreset.html
 
 ```html
 <!DOCTYPE html>
@@ -64,7 +68,7 @@
 
 
 
-
+- views ---> pwreset
 
 ```python
 def pwreset(request):
