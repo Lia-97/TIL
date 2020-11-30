@@ -4,7 +4,7 @@
 #
 # from math import *
 # print(floor(4.99)) #내림
-# print(ceil(3.14))
+# print(ceil(3.14)) #올림
 # print(sqrt(16)) #제곱근
 #
 # # 랜덤 함수
@@ -38,27 +38,6 @@
 # print(python[0].isupper())  #True (첫번째 문자가 대문자인가?)
 # print(python.replace('Python','Java'))  # 'Java is Amazing'
 
-# # 문자열포맷
-#
-# # 방법1
-# print('나는 %d살입니다.' % 20) # d는 정수를 의미
-# print('나는 %s을 좋아해요.' % '파이썬') # s는 문자열(정수도 가능) 의미
-# print('Apple 은 %c로 시작해요.' % 'A') # c는 한글자를 의미(character)
-# print('나는 %s색과 %s색을 좋아해요.' %('파란','빨간'))
-#
-# # 방법2
-# print('나는 {}살입니다.'.format(20))
-# print('나는 {}색과 {}색을 좋아해요.'.format('파란','빨간'))
-# print('나는 {1}색과 {0}색을 좋아해요.'.format('파란','빨간'))
-
-# # 방법3
-# print('나는 {age}살이며, {color}색을 좋아해요.'.format(age = 20, color = '빨간'))
-#
-# # 방법4
-# age = 20
-# color = '빨간'
-# print(f'나는 {age}살이며, {color}색을 좋아해요.')
-
 # # 탈출문자
 #
 # # \n : 줄바꿈
@@ -68,11 +47,15 @@
 # # \\ : 문장 내에서 \
 # print('\\')
 # # \r : 커서를 맨 앞으로 이동
-# print("Red Apple\rPine") #?????????
+# move = "Red Apple\rPine"
+# print(move) #?????????
+# print(len(move))
 # # \b : 백스페이스 (한글자 삭제)
 # print("Redd\bApple")
-# # \t : 탭
-# print("Red\tApple") #?????????
+# # # \t : 탭
+# tab = "Red\tApple"
+# print(tab) #?????????
+# print(len(tab))
 
 """Quiz) 사이트별로 비밀번호를 만들어 주는 프로그램을 작성하시오
 
@@ -84,18 +67,18 @@
 예) 생성된 비밀번호 : nav51!
 """
 
-# #내 답안
-# ad = "http://naver.com"
-# dot = ad.find('.')
-# word = ad[7:dot]
-# key1 = word[:3]
-# key2 = len(word)
-# key3 = word.count('e')
-# print(key1,key2,key3,'!',sep="")
-#
-# #해설
-# url = "http://naver.com"
-# my_str = url.replace('http://','')
-# my_str = my_str[:my_str.index('.')]
-# password = my_str[:3] + str(len(my_str)) + str(my_str.count('e')) + '!'
-# print("{0}의 비밀번호는 {1}입니다.".format(url,password))
+#내 답안
+ad = "http://naver.com"
+dot = ad.find('.')
+word = ad[7:dot]
+key1 = word[:3]
+key2 = len(word)
+key3 = word.count('e')
+print(key1,key2,key3,'!',sep="")
+
+#해설
+url = "http://naver.com"
+my_str = url.replace('http://','')
+my_str = my_str[:my_str.index('.')]
+password = my_str[:3] + str(len(my_str)) + str(my_str.count('e')) + '!'
+print("{0}의 비밀번호는 {1}입니다.".format(url,password))
